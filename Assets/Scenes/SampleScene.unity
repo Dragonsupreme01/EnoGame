@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.117304526, g: 0.00041900057, b: 0.015441487, a: 1}
+  m_IndirectSpecularColor: {r: 0.117307775, g: 0.000418999, b: 0.015441683, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,15 +98,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.57
     agentHeight: 2
-    agentSlope: 15.7
+    agentSlope: 9.1
     agentClimb: 0.2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 6
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.19
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -214,7 +214,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &43461194
 Transform:
@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 79802742}
   - component: {fileID: 79802741}
   - component: {fileID: 79802740}
+  - component: {fileID: 79802743}
   m_Layer: 0
   m_Name: DiscoHamburgador
   m_TagString: Untagged
@@ -390,9 +391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a08be1d2bf55bd4c9fc8b339cd79c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 35
-  distanciaMinina: 1
-  alvo: {fileID: 943642141}
 --- !u!95 &79802741
 Animator:
   serializedVersion: 3
@@ -429,6 +427,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &79802743
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79802739}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &82780253
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,8 +875,8 @@ GameObject:
   m_Name: Cylinder.002 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &157363248
 Transform:
@@ -990,7 +1009,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 65573dba8b2fc09428c5c574ef717596, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 65573dba8b2fc09428c5c574ef717596, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -998,11 +1017,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 65573dba8b2fc09428c5c574ef717596, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 65573dba8b2fc09428c5c574ef717596, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 65573dba8b2fc09428c5c574ef717596, type: 3}
       propertyPath: m_LocalScale.x
@@ -1382,8 +1401,8 @@ GameObject:
   m_Name: Cylinder.002 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &247147074
 Transform:
@@ -1588,7 +1607,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &318022160
 Transform:
@@ -1994,7 +2013,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &364437103
 Transform:
@@ -2101,7 +2120,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &385383467
 Transform:
@@ -2348,7 +2367,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &405586214
 Transform:
@@ -2511,8 +2530,8 @@ GameObject:
   m_Name: Cylinder.002 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &432950951
 Transform:
@@ -2779,7 +2798,6 @@ GameObject:
   - component: {fileID: 518089071}
   - component: {fileID: 518089073}
   - component: {fileID: 518089072}
-  - component: {fileID: 518089074}
   m_Layer: 0
   m_Name: Cylinder.002 (4)
   m_TagString: Untagged
@@ -2844,20 +2862,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 518089070}
   m_Mesh: {fileID: 4300000, guid: e4f36bfe041e7a0498c1b6e14f028e38, type: 3}
---- !u!64 &518089074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 518089070}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: e4f36bfe041e7a0498c1b6e14f028e38, type: 3}
 --- !u!1 &525970715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2877,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &525970716
 Transform:
@@ -2947,7 +2951,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &529519616
 Transform:
@@ -3395,7 +3399,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 555984925}
   m_LocalRotation: {x: 0.38556546, y: -0.7435991, z: -0.544172, w: -0.04771246}
-  m_LocalPosition: {x: 95.63884, y: 24.6, z: 93.66968}
+  m_LocalPosition: {x: 226, y: 1, z: -67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 544482076}
@@ -3678,7 +3682,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 614242315}
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.00000011920929, z: 0}
+  m_LocalPosition: {x: -0, y: 3.74, z: 79.69}
   m_LocalScale: {x: 101.959145, y: 101.95911, z: 100}
   m_Children: []
   m_Father: {fileID: 1281697687}
@@ -3876,8 +3880,8 @@ GameObject:
   m_Name: Cylinder.002 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &642525847
 Transform:
@@ -4327,8 +4331,8 @@ GameObject:
   m_Name: Cylinder.002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &759533816
 Transform:
@@ -4850,7 +4854,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &792325313
 Transform:
@@ -4924,7 +4928,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &805301494
 Transform:
@@ -5092,7 +5096,6 @@ GameObject:
   m_Component:
   - component: {fileID: 846975634}
   - component: {fileID: 846975633}
-  - component: {fileID: 846975632}
   m_Layer: 0
   m_Name: Terreno
   m_TagString: Untagged
@@ -5100,16 +5103,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!154 &846975632
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 846975631}
-  m_Material: {fileID: 0}
-  m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: e342a5eea0664554f9915acd73a85324, type: 2}
-  m_EnableTreeColliders: 1
 --- !u!218 &846975633
 Terrain:
   m_ObjectHideFlags: 0
@@ -5168,8 +5161,8 @@ GameObject:
   m_Name: Cylinder.002 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &849556999
 Transform:
@@ -5335,19 +5328,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 3a336533256a2a64dbf7270a36e18d0a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3a336533256a2a64dbf7270a36e18d0a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3a336533256a2a64dbf7270a36e18d0a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3a336533256a2a64dbf7270a36e18d0a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 3a336533256a2a64dbf7270a36e18d0a, type: 3}
       propertyPath: m_LocalScale.x
@@ -5378,8 +5371,8 @@ GameObject:
   m_Name: Cylinder.002 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &857025040
 Transform:
@@ -5452,8 +5445,8 @@ GameObject:
   m_Name: Cylinder.002 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &857040919
 Transform:
@@ -5521,11 +5514,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 1b2c7eb8afc091b419a269a10ee18693, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 234.65115
+      value: 235.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1b2c7eb8afc091b419a269a10ee18693, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12587607
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1b2c7eb8afc091b419a269a10ee18693, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5607,6 +5600,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7a3c8a88b29695149860688134879468, type: 2}
+    - target: {fileID: 2300000, guid: 1b2c7eb8afc091b419a269a10ee18693, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b2c7eb8afc091b419a269a10ee18693, type: 3}
   m_IsPrefabParent: 0
@@ -5729,7 +5726,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b4e00aa1fdd44314fad861d44b5ab45e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b4e00aa1fdd44314fad861d44b5ab45e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5737,7 +5734,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b4e00aa1fdd44314fad861d44b5ab45e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b4e00aa1fdd44314fad861d44b5ab45e, type: 3}
       propertyPath: m_LocalScale.x
@@ -5769,7 +5766,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &904399622
 Transform:
@@ -5842,8 +5839,8 @@ GameObject:
   m_Name: Cylinder.002 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &915490494
 Transform:
@@ -6252,7 +6249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &965797847
 Transform:
@@ -6443,7 +6440,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &995090403
 Transform:
@@ -6841,7 +6838,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1081407968
 Transform:
@@ -6943,7 +6940,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1110498772
 Transform:
@@ -7079,27 +7076,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7122,8 +7119,8 @@ GameObject:
   m_Name: Cylinder.002 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1123953961
 Transform:
@@ -7424,8 +7421,8 @@ GameObject:
   m_Name: Cylinder.002 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1153942686
 Transform:
@@ -7671,8 +7668,8 @@ GameObject:
   m_Name: Cylinder.002 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1197914843
 Transform:
@@ -7894,7 +7891,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1255115795
 Transform:
@@ -8104,7 +8101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1266992412
 Transform:
@@ -8178,7 +8175,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1276886347
 Transform:
@@ -8249,6 +8246,7 @@ GameObject:
   - component: {fileID: 1281697688}
   - component: {fileID: 1281697690}
   - component: {fileID: 1281697689}
+  - component: {fileID: 1281697691}
   m_Layer: 0
   m_Name: Kibemonio
   m_TagString: Untagged
@@ -8282,7 +8280,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1281697685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 352.6, y: -0.2, z: 462.3}
+  m_LocalPosition: {x: 539.9, y: -0.2, z: 1101.6}
   m_LocalScale: {x: 2.3954587, y: 2.3954582, z: 2.3954582}
   m_Children:
   - {fileID: 786236008}
@@ -8303,9 +8301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a08be1d2bf55bd4c9fc8b339cd79c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 65
-  distanciaMinina: 1
-  alvo: {fileID: 943642141}
 --- !u!195 &1281697689
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8315,11 +8310,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 60
+  m_Acceleration: 20
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_AngularSpeed: 300
+  m_StoppingDistance: 10
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -8340,6 +8335,18 @@ CapsuleCollider:
   m_Height: 3.5428398
   m_Direction: 1
   m_Center: {x: 0.09476473, y: 1.0809737, z: 0}
+--- !u!114 &1281697691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281697685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f279de83e9a7f85478731b8d856de288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jogador: {fileID: 943642136}
 --- !u!1 &1305121507
 GameObject:
   m_ObjectHideFlags: 0
@@ -8461,8 +8468,8 @@ GameObject:
   m_Name: Cylinder.002 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1335091484
 Transform:
@@ -8535,8 +8542,8 @@ GameObject:
   m_Name: Cylinder.002 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1335555030
 Transform:
@@ -8668,7 +8675,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1368380857
 Transform:
@@ -8993,8 +9000,8 @@ GameObject:
   m_Name: Cylinder.002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1459782547
 Transform:
@@ -9126,8 +9133,8 @@ GameObject:
   m_Name: Cylinder.002 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1486954850
 Transform:
@@ -9259,15 +9266,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9275,7 +9282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 0c6a04e92f839b4418dee7f1128f42d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9306,8 +9313,8 @@ GameObject:
   m_Name: Cylinder.002 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1509161185
 Transform:
@@ -9381,7 +9388,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1511561291
 Transform:
@@ -9454,8 +9461,8 @@ GameObject:
   m_Name: Cylinder.002 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1521727674
 Transform:
@@ -9655,8 +9662,8 @@ GameObject:
   m_Name: Cylinder.002 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1525588938
 Transform:
@@ -9730,7 +9737,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1530486912
 Transform:
@@ -9894,8 +9901,8 @@ GameObject:
   m_Name: Cylinder.002 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1560821741
 Transform:
@@ -10060,27 +10067,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b47203b891c90c44bbb17d6492e178df, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10102,7 +10109,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1583376672}
   - component: {fileID: 1583376671}
-  - component: {fileID: 1583376673}
+  - component: {fileID: 1583376674}
+  - component: {fileID: 1583376675}
   m_Layer: 0
   m_Name: Ticoliro
   m_TagString: Untagged
@@ -10148,7 +10156,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1583376673
+--- !u!195 &1583376674
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1583376670}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 20
+  m_Acceleration: 20
+  avoidancePriority: 50
+  m_AngularSpeed: 300
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1583376675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -10156,12 +10185,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583376670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a08be1d2bf55bd4c9fc8b339cd79c65, type: 3}
+  m_Script: {fileID: 11500000, guid: f279de83e9a7f85478731b8d856de288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 35
-  distanciaMinina: 1
-  alvo: {fileID: 943642141}
+  Jogador: {fileID: 943642136}
 --- !u!1 &1600729352
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,7 +10308,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8fa281a98c10e1144a384bfb6d6fc58d, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 8fa281a98c10e1144a384bfb6d6fc58d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10289,7 +10316,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 8fa281a98c10e1144a384bfb6d6fc58d, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 8fa281a98c10e1144a384bfb6d6fc58d, type: 3}
       propertyPath: m_LocalScale.x
@@ -10453,7 +10480,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &1646869674
 Transform:
@@ -10685,8 +10712,8 @@ GameObject:
   m_Name: Cylinder.002 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1675549783
 Transform:
@@ -10759,8 +10786,8 @@ GameObject:
   m_Name: Cylinder.002 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1680600554
 Transform:
@@ -10919,8 +10946,8 @@ GameObject:
   m_Name: Cylinder.002 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1742338460
 Transform:
@@ -11375,8 +11402,8 @@ GameObject:
   m_Name: Cylinder.002 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1833175843
 Transform:
@@ -11799,8 +11826,8 @@ GameObject:
   m_Name: Cylinder.002 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1909375588
 Transform:
@@ -12497,7 +12524,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &2115143445
 Transform:
@@ -12633,7 +12660,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!4 &2133423109
 Transform:
@@ -12737,7 +12764,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: f98dc270483a7264b8fcf7c5ebbb06f9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f98dc270483a7264b8fcf7c5ebbb06f9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12745,7 +12772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: f98dc270483a7264b8fcf7c5ebbb06f9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f98dc270483a7264b8fcf7c5ebbb06f9, type: 3}
       propertyPath: m_LocalScale.x
